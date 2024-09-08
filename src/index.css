@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-color: rgb(255, 255, 255);
+  width: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 550px;
+  overflow: hidden;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-form button {
+  padding: 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background-color: #4cae4c;
+}
+
+.task-list {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column-reverse; /* Display tasks in reverse order */
+  overflow-y: auto;
+  padding-right: 10px;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.task-list::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome/Safari/Edge */
+}
+
+.task-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.task-item h3 {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.task-item p {
+  margin-bottom: 10px;
+  color: #888;
+}
+
+.task-item button {
+  padding: 5px 10px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background-color: #c9302c;
+}
+.error-message {
+  color: #d9534f;
+  margin-bottom: 10px;
+}
